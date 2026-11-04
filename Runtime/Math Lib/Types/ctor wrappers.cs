@@ -1,4 +1,6 @@
-#if !MAXMATH_NO_HLSL_CONSTRUCTORS
+// LabOne: compiled only with MAXMATH_HLSL_CONSTRUCTORS, never by default: these methods of math named after types
+// (quadruple, Int128, UInt128, half, quarter) hide those types from the code of math itself (quadruple.fmadd(...): CS0119).
+#if MAXMATH_HLSL_CONSTRUCTORS
 
 using System.Runtime.CompilerServices;
 
