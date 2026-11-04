@@ -6,7 +6,7 @@ using DevTools;
 #pragma warning disable CS0660
 namespace MaxMath
 {
-    [Serializable]
+    // LabOne: not [Serializable]: a ref struct, which Unity never serializes; Unity warned of each of its columns (UAC1001)
     [StructLayout(LayoutKind.Sequential, Pack = 1)]
     unsafe public ref struct mask32x2x2
     {
